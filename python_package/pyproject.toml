@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "CHANGEME_PACKAGE_NAME"
+version = "0.0.1"
+authors = [
+  { name="Vincent GAUTIER", email="gautier.vincent.ci@gmail.com" },
+]
+description = "A small package that helps managing various data sources and formats via SQL"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+"minio",
+"psycopg2-binary",
+"pandas",
+"ibm_db",
+"pysqlite3",
+"redis",
+"celery",
+"flower",
+"ratelimit",
+"backoff",
+"requests",
+"pyyaml",
+"pyarrow",
+"duckdb"
+]
+[project.scripts]
+testcli = "CHANGEME_PACKAGE_NAME.cli:main"
+[project.urls]
+"Homepage" = "https://github.com/pypa/sampleproject"
+"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
